@@ -1,25 +1,44 @@
 // Set font families
-$font-family--primary      : Arial, sans-serif; 
-$font-family--secondary    : Georgia, serif;
+$font-family--primary      : 'Open Sans', sans-serif;
 
 // Set font weights
-$font-weight--light       : 100;
-$font-weight--normal      : 300;
+$font-weight--light       : 300;
+$font-weight--normal      : 400;
+$font-weight--semi-bold   : 600;
 $font-weight--bold        : 700;
+$font-weight--extra-bold  : 800;
+
 
 // Set color
 $black                    : #000000;
 $white                    : #ffffff;
+$grey				      : #47474B;
+$grey-lt				  : #F4F4F4;
+$grey-md			      : #cccccc;
+$navy					  : #002D5B; 
+$blue-dk				  : #005F9E;
+$blue 					  : #009AD9; 
+$blue-lt			      : #eceef5;
+$yellow					  : #FFBE00;
+$red 					  : #D0021B;
+
 
 // Brand Colors 
 
 // Set main colors
-$primary-color            : $black;
-$secondary-color          : $white;
+$primary-color            : $blue;
+$secondary-color          : $yellow;
 
-$body-font-color          : $black;
+$body-color          	  : $grey;
 
 // Set font size
-$base__font-size          : 100%;
+$base__font-size          : 16px;
 $base__line-height		  : 1.6;
+
+
+// Media Q helpers
+$break-laptop			  : 1180px;
+$break-tablet			  : 768px;
+$break-phone			  : 641px;
+
 

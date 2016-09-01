@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BTN---DD---Purchase---D---OFF" transform="translate(-200.000000, -25.000000)" fill="#C6C8CE">
+            <polygon id="Arrow" transform="translate(207.000000, 30.250000) rotate(90.000000) translate(-207.000000, -30.250000) " points="202 24 202 36.5 212 30.1249589"></polygon>
+        </g>
+    </g>
+</svg>

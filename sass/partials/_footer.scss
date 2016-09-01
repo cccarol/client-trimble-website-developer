@@ -1,0 +1,114 @@
+footer {
+	background: $white;
+	border-top: $grey-md 1px solid;
+	width: 100%;
+	padding: 70px 20px;
+	position: relative;
+	z-index: 5;
+
+	@media screen and (max-width: $break-laptop) {
+		padding: 30px 20px;
+	}
+
+	.logo {
+		display: block;
+		height: 60px;
+		width: 59px;
+		float: left;
+		margin: 0 50px 0 0;
+		background: url(../images/logos/trimble-icon.svg) no-repeat;
+		background-size: 100% 100%;
+
+		@media screen and (max-width: $break-laptop) {
+			background: url(../images/logos/trimble-developer.svg) no-repeat;
+			background-size: 100% 100%;
+			height: 35px;
+			width: 204px;
+		}
+
+		@media screen and (max-width: $break-phone) {
+			margin-bottom: 10px;
+		}
+	}
+
+	.button {
+		float: right;
+		@media screen and (max-width: $break-phone) {
+			display: none;
+		}
+	}
+
+	.utility {
+		clear: both;
+		a {
+			font-size: 16px;
+			color: $body-color;
+			font-weight: $font-weight--semi-bold;
+			margin: 0 20px 0 0;
+		}
+	}
+
+	nav, .copy {
+		float: left;
+	}
+
+	nav {
+		@media screen and (max-width: $break-phone) {
+			display: none;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				margin: 0 30px 0 0;
+				@media screen and (max-width: $break-laptop) {
+					margin: 0 10px 0 0;
+				}
+
+				a {
+					display: block;
+					padding: 5px 0;
+					color: $body-color;
+					font-size: 16px;
+					font-weight: $font-weight--semi-bold;
+					@media screen and (max-width: $break-laptop) {
+						font-size: 15px;
+						font-weight: $font-weight--normal;
+					}
+				}
+
+				&:nth-child(1), &:nth-child(2) {
+					a {
+						@media screen and (max-width: $break-laptop) {
+							font-weight: $font-weight--semi-bold;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.copy {
+		font-size: 14px;
+		color: lighten($body-color, 30%);
+		margin: 0;
+		@media screen and (max-width: $break-laptop) {
+			font-size: 12px;
+			font-style: italic;
+		}
+
+		a {
+			color: lighten($body-color, 30%);
+			display: inline-block;
+			margin: 0 20px;
+
+			@media screen and (max-width: $break-phone) {
+				display: none;
+			}
+		}
+	}
+}

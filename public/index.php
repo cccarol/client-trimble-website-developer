@@ -8,6 +8,7 @@
         <meta name="keywords" content="">
         <title></title>
         <link type="image/x-icon" rel="shortcut icon" href="_assets/images/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="_assets/css/styles.css" />
 
         <!-- 
@@ -30,10 +31,16 @@
             Your Browser is out of date! Please upgrade to the newest version of <a href="http://www.google.com/chrome/">Chrome</a>, <a href="https://www.apple.com/safari/">Safari</a> or <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a>.
             </div>
         <![endif]-->
+        <div class="wrapper">
+            <?php include 'partials/header.php'; ?>
+
+            <?php include 'partials/footer.php'; ?>
+        </div>
 
 
          <script src="_assets/vendor/modernizr/modernizr.js"></script>
          <script src="_assets/vendor/jquery/dist/jquery.min.js"></script>
+         <script src="_assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
          <script src="_assets/vendor/foundation/js/foundation.min.js"></script>
          <script src="_assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
          <script src="_assets/js/main.js"></script>

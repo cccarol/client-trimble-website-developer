@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="MDK-Purchase" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.103661381">
+        <g id="MDK-Purchase-D" transform="translate(-759.000000, -406.000000)">
+            <g id="Intro" transform="translate(412.000000, 225.000000)">
+                <g id="Arrow" transform="translate(348.000000, 182.000000)">
+                    <circle id="Oval-1" stroke="#FFFFFF" stroke-width="2" cx="20" cy="20" r="20"></circle>
+                    <polygon id="Page-1" fill="#FFFFFF" transform="translate(20.003000, 20.499000) rotate(90.000000) translate(-20.003000, -20.499000) " points="24.752 15 23.382 16.406 26.327 19.495 10 19.495 10 21.495 26.309 21.495 23.309 24.576 24.665 25.998 30.006 20.515"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
