@@ -1,0 +1,81 @@
+.news-item {
+	padding: 0;
+	border-bottom: 1px solid $grey-md;
+	margin: 0;
+
+	&:after {
+        @include clearfix();
+    }
+
+	a {
+		display: block;
+		color: $body-color;
+		background: url(../images/icons/arrow-grey-next.svg) no-repeat right center;
+		padding: 20px 50px 20px 20px;
+
+		&:after {
+	        @include clearfix();
+	    }
+
+	    &:hover {
+	    	background-color: $grey-md;
+	    }
+
+		.icon {
+			float: left;
+			padding: 10px;
+			width: 39px;
+			height: 100%;
+			display: block;
+
+		}
+
+		.news-content {
+			float: right;
+			width: calc(100% - 60px);
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+}
+
+.icon {
+	text-indent: -9999px;
+
+	&.icon-file {
+		background: url(../images/icons/file.svg) no-repeat 0 0;
+		background-size: 100% 100%;
+	}
+
+	&.icon-calendar {
+		background: url(../images/icons/calendar.svg) no-repeat 0 0;
+		background-size: 100% 100%;
+	}
+
+	&.icon-profile {
+		background: url(../images/icons/profile.svg) no-repeat 0 0;
+		background-size: 100% 100%;
+	}
+
+	&.icon-profile-simple {
+		background: url(../images/icons/profile-simple.svg) no-repeat 0 0;
+		background-size: 100% 100%;
+	}
+
+	&.icon-profile-lock {
+		background: url(../images/icons/profile-lock.svg) no-repeat 0 0;
+		background-size: 100% 100%;
+	}
+
+	&.icon-tools {
+		background: url(../images/icons/build.svg) no-repeat 0 0;
+		background-size: 100% 100%;
+	}
+
+	&.icon-download {
+		background: url(../images/icons/download.svg) no-repeat 0 0;
+		background-size: 100% 100%;
+	}
+}

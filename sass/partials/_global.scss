@@ -23,6 +23,11 @@ a img {
 
 a {
     text-decoration: none;
+    color: $primary-color;
+
+    &:hover {
+        color: $secondary-color;
+    }
 }
 
 img {
@@ -44,6 +49,51 @@ img {
     left: 0;
     top: 0;
 }
+
+
+// text . 
+h1, h2, h3, h4, h5, h6, ul, ol, p {
+    margin: 0 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    color: $body-color;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: $font-weight--bold;
+
+    &.h2-secondary {
+        margin-bottom: 0;
+    }
+}
+
+h3 {
+    font-size: 20px;
+
+    &.h3-secondary {
+        margin-bottom: 0;
+    }
+}
+
+.bg-dark {
+    h1, h2, h3, h4, h5, h6, ul, ol, p {
+        color: $white;
+    }
+}
+
+.larger {
+    font-size: 110%;
+}
+
+// Spacing . 
+
+.margin-bottom-large {
+    margin-bottom: 100px;
+}
+
 
 
 // Buttons . 
@@ -68,6 +118,24 @@ img {
             color: $white;
         }
     }
+
+    &.button-arrow {
+        background: url(../images/icons/arrow-white-next.svg) no-repeat right center;
+        background-size: 30px 13px;
+        padding: 0 50px 0 0;
+        color: $white;
+        font-weight: $font-weight--bold;
+        font-size: 18px;
+
+         &.button-arrow-blue {
+            background: url(../images/icons/arrow-blue-next.svg) no-repeat right center;
+            background-size: 30px 13px;
+            padding: 0 50px 0 0;
+            color: $primary-color;
+            font-weight: $font-weight--bold;
+            font-size: 18px;
+        }
+    }
 }
 
 // Structure .
@@ -76,6 +144,8 @@ img {
     max-width: 1550px;
     width: calc(100% - 40px);
     margin: 0 auto;
+    height: 100%;
+
     @media screen and (max-width: $break-tablet) {
         width: 100%;
     }
@@ -83,4 +153,41 @@ img {
 
 .row {
     max-width: 1300px;
+
+    &.row-full {
+        max-width: 100%;
+    }
+}
+
+.body {
+    background: $white;
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        background: url(../images/bg/pattern-plus.png) right 0 no-repeat;
+        width: 668px;
+        height: 186px;
+        z-index: 10;
+        position: absolute;
+        right: 0;
+    }
+}
+
+.content {
+    padding: 100px 0;
+}
+
+section {
+    &:after {
+        @include clearfix();
+    }
+}
+
+
+// BGs
+
+.bg-pattern {
+    background: url(../images/bg/bg.png) 0 0 repeat;
 }

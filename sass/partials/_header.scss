@@ -2,13 +2,9 @@ header {
 	width: 100%;
 	background: $white;
 	border-top: $grey-md 1px solid;
-	padding: 50px 20px;
+	padding: 30px 20px;
 	position: relative;
 	z-index: 10;
-
-	@media screen and (max-width: $break-tablet) {
-		padding: 30px 20px;
-	}
 
 	.logo {
 		width: 205px;
@@ -96,8 +92,13 @@ header {
 						color: $body-color;
 						font-size: 16px;
 						font-weight: $font-weight--normal;
+
+						@media screen and (max-width: $break-tablet) {
+							font-size: 24px;
+							font-weight: $font-weight--bold;
+						}
 					}
-					&:nth-child(1) {
+					&.home-link {
 						a {
 							display: none;
 						}
@@ -129,16 +130,95 @@ header {
 					padding: 0;
 					margin: 0;
 
-					&:last-child {
-						display: none;
-					}
+					
 					a {
 
+					}
+
+					&.loggedin {
+						//TODO: set up secure zone logic. 
+						display: none;
+
+						a.icon-loggedin {
+							background: url(../images/icons/profile.svg) no-repeat 0 0;
+							background-size: 100% 100%;
+							text-indent: -9999px;
+							display: block;
+							width: 46px;
+							height: 46px;
+						}
 					}
 				}
 			}
 			.nav-account {
 				display: none;
+				overflow: hidden;
+				width: 240px;
+				box-shadow: 0 0 10px $grey-lt;
+				padding: 20px;
+				background: $white;
+				position: absolute;
+				right: -30px;
+    			margin-top: 20px;
+
+
+				.profile-simple {
+					.name {
+						font-size: 18px;
+						font-weight: $font-weight--bold;
+						padding: 0 30px 0 0;
+						display: inline-block;
+
+						&.name-approved {
+							background: url(../images/icons/valid.svg) right center no-repeat;
+							background-size: 20px 20px;
+
+						}
+					}
+
+					.status {
+						font-size: 14px;
+						margin-bottom: 10px;
+					}
+				}
+
+				ul {
+					list-style: none;
+					margin: 0;
+					padding: 0;
+
+					li {
+						margin: 0;
+						padding: 0;
+						display: block;
+
+						a {
+							font-size: 15px;
+							padding: 5px 0 5px 30px;
+							display: block;
+							font-weight: $font-weight--normal;
+						}
+
+						&.icon-settings {
+							a {
+								background: url(../images/icons/settings.svg) no-repeat 0 center;
+								background-size: 23px 23px;
+							}
+						}
+
+						&.icon-logout {
+							a {
+								background: url(../images/icons/lock.svg) no-repeat 0 center;
+								background-size: 23px 23px;
+							}
+						}
+					}
+				}
+
+				&.open {
+					display: block;
+
+				}
 			}
 		}
 
@@ -185,15 +265,32 @@ header {
 
 			.utility {
 				position: absolute;
-			    top: 5%;
-			    right: 7%;
+
+				@media screen and (max-width: $break-tablet) {
+				    top: 5%;
+				    right: 7%;
+				}
+
+				@media screen and (max-width: $break-phone) {
+				    top: 90%;
+				    display: block;
+				    left: 5%;
+				    right: 5%;
+				}
 
 				ul {
 					li {
+
+						@media screen and (max-width: $break-phone) {
+							display: block;
+						}
 						.button-outline {
 							background: none;
 							border-color: $secondary-color;
 							color: $secondary-color;
+							@media screen and (max-width: $break-phone) {
+								display: block;
+							}
 						}
 					}
 				}

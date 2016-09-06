@@ -1,0 +1,75 @@
+.home {
+	.hero {
+		height: 650px;
+		width: calc(100% + 40px);
+		max-width: 1600px;
+		position: relative;
+		margin: 0 -20px 0;
+		padding: 100px 0 0;
+
+
+		.hero-image {
+			width: 25%;
+			display: block;
+			float: left;
+			height: 100%;
+			background-size: cover !important;
+			background-position: center center !important;
+			
+		}
+
+		.hero-content {
+			position: absolute;
+			left: 0;
+			top: 40%;
+			max-width: 580px;
+			padding: 0;
+
+			img {
+				margin: 0 0 20px 40px;
+			}
+
+			.hero-line {
+				border-left: 10px solid $secondary-color;
+				padding-left: 30px;
+			}
+			h1 {
+				font-size: 48px;
+				color: $white;
+				font-weight: $font-weight--extra-bold;
+				line-height: 1.1;
+				margin: 0;
+				@media screen and (max-width: $break-tablet) {
+					font-size: 36px;
+				}
+			}
+
+			p {
+				font-size: 24px;
+				font-weight: $font-weight--extra-bold;
+				color: $secondary-color;
+				margin: 0;
+			}
+		}
+
+	}
+}
+
+.faqs {
+	background: url(../images/bg/pattern-board.png);
+	position: relative;
+	z-index: 0;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: rgba($black, .9);
+	}
+}

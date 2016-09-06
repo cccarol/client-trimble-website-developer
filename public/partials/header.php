@@ -15,7 +15,7 @@
 				
 				<nav>
 					<ul>
-						<li><a href="">Home</a></li>
+						<li class="home-link"><a href="">Home</a></li>
 						<li><a href="">Hardware Development</a></li>
 						<li><a href="">Software Development</a></li>
 						<li><a href="">Showcase</a></li>
@@ -26,7 +26,7 @@
 				<div class="utility">
 					<ul>
 						<li class="login"><a class="button button-outline" href="">Login/Register</a></li>
-						<li class="loggedin"><a href="">Account</a>
+						<li class="loggedin"><a class="icon-loggedin" href="">Account</a>
 							<div class="nav-account">
 								<nav>
 									<div class="profile-simple">
