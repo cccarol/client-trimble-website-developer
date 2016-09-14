@@ -43,7 +43,7 @@
                             <div class="small-12 medium-push-3 medium-9 large-push-3 large-5 columns">
 
                                 <div class="hero-inner-content">
-                                    <h1>EMPOWER software development documentation.</h1>
+                                    <h1><span>EMPOWER</span> software development documentation.</h1>
                                 </div>
                             </div>
                         </div>
@@ -53,9 +53,9 @@
                                 <li class="accordion-navigation">
                                   <a href="#subnav" aria-expanded="true" class="accordion-link">Overview</a>
                                   <div id="subnav" class="content">
-                                    <a href="">Overview</a>
-                                    <a href=""  class="active">Documentation</a>
-                                    <a href="">Design Files</a>
+                                    <a href="software-development.php">Overview</a>
+                                    <a href="software-development-docs.php" class="active">Documentation</a>
+                                    <a href="software-development-files.php">Design Files</a>
                                 </div>
                             </li>
                         </ul>

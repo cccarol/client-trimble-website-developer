@@ -53,13 +53,13 @@ $(function() {
 
 
     //HardWare Dev Slider -> CSS transitions and media q's
+
     //// Left Side
     $(".hd-left .show-detail").click(function(test3) {
         test3.preventDefault();
         $(".hd-left .detail").toggleClass("open");
         $(".hd-left .content").toggleClass("close");
-        $(".hd-left").toggleClass("shift");
-        // $(".title-shift").toggleClass("shift-right");
+        $(".hd-col").toggleClass("shift-right shift");
     });
 
     $(".hd-left .show-list").click(function(test4) {
@@ -74,7 +74,7 @@ $(function() {
         test5.preventDefault();
         $(".hd-right .detail").toggleClass("open");
         $(".hd-right .content").toggleClass("close");
-        $(".hd-right").toggleClass("shift");
+        $(".hd-col").toggleClass("shift-left shift");
         // $(".title-shift").toggleClass("shift-left");
     });
 

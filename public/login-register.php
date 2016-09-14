@@ -37,28 +37,39 @@
                 <section class="main">
                     <div class="content">
                         <div class="row">
-                            <div class="small-12 medium-6 columns">
-                                <h1>Are you a registered EMPOWER Developer?</h1>
-                                <p>Login to your Trimble account below.</p>
-                                <form>
-                                    <div class="input-wrapper small">
-                                        <label class="icon icon-user">User</label>
-                                        <input type="text">
-                                    </div>
+                            <div class="small-12 medium-push-1 medium-10 large-push-2 large-8  columns">
+                                <div class="row">
+                                    <div class="small-12 medium-6 columns">
+                                        <h1>Are you a registered EMPOWER Developer?</h1>
+                                        <p>Login to your Trimble account below.</p>
+                                        <form>
+                                            <div class="input-wrapper small">
+                                                <label class="icon icon-user">User</label>
+                                                <input type="text" placeholder="Username or Email">
+                                            </div>
 
-                                    <div class="input-wrapper small">
-                                        <label class="icon icon-lock2">Lock</label>
-                                        <input type="text">
+                                            <div class="input-wrapper small">
+                                                <label class="icon icon-lock2">Lock</label>
+                                                <input type="text" placeholder="Password">
+                                            </div>
+
+                                            <input type="checkbox"><label>Remember Me</label>
+
+
+                                            <input type="submit" value="Login" class="button button-yellow button-large"/>
+                                            <p class="text-center"><a href="#">I fogot my Password!</a></p>
+
+                                        </form>
                                     </div>
-                                </form>
-                            </div>
-                            <div class="small-12 medium-6 columns">
-                                <h1>Want to become a developer?</h1>
-                                <p>Click the link below to register.</p>
-                                <p><a href="" class="button button-large button-outline">Register</a></p>
-                                <h3 class="h3-secondary">New to Trimble? </h3>
-                                <p>Visit our global site to learn more about our amazing products and services.<br />
-                                <a href="http://www.trimble.com">www.trimble.com</a></p>
+                                    <div class="small-12 medium-6 columns">
+                                        <h1>Want to become a developer?</h1>
+                                        <p>Click the link below to register.</p>
+                                        <p><a href="" class="button button-large button-outline">Register</a></p>
+                                        <h3 class="h3-secondary">New to Trimble? </h3>
+                                        <p>Visit our global site to learn more about our amazing products and services.<br />
+                                        <a href="http://www.trimble.com">www.trimble.com</a></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

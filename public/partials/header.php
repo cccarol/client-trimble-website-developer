@@ -57,7 +57,7 @@
 
 				<div class="utility">
 					<ul>
-						<li class="login"><a class="button button-outline" href="">Login/Register</a></li>
+						<li class="login"><a class="button button-outline" href="login-register.php">Login/Register</a></li>
 						<li class="loggedin"><a class="icon-loggedin" href="">Account</a>
 							<div class="nav-account">
 								<nav>

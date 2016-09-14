@@ -43,7 +43,7 @@
                         <div class="small-12 medium-push-3 medium-9 large-push-3 large-5 columns">
                             
                             <div class="hero-inner-content">
-                                <h1>Trimble EMPOWER Software Development Overview.</h1>
+                                <h1>Trimble <span>EMPOWER</span> Software Development Overview.</h1>
                             </div>
                         </div>
                     </div>

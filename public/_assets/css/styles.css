@@ -3026,6 +3026,10 @@ fieldset {
     width: 115px; }
   .input-wrapper.large select, .input-wrapper.large input:not([type]), .input-wrapper.large input[type="text"], .input-wrapper.large input[type="password"], .input-wrapper.large input[type="date"], .input-wrapper.large input[type="datetime"], .input-wrapper.large input[type="datetime-local"], .input-wrapper.large input[type="month"], .input-wrapper.large input[type="week"], .input-wrapper.large input[type="email"], .input-wrapper.large input[type="number"], .input-wrapper.large input[type="search"], .input-wrapper.large input[type="tel"], .input-wrapper.large input[type="time"], .input-wrapper.large input[type="url"], .input-wrapper.large input[type="color"], .input-wrapper.large textarea {
     width: calc(100% - 115px); }
+  .input-wrapper.small label {
+    width: 50px; }
+  .input-wrapper.small select, .input-wrapper.small input:not([type]), .input-wrapper.small input[type="text"], .input-wrapper.small input[type="password"], .input-wrapper.small input[type="date"], .input-wrapper.small input[type="datetime"], .input-wrapper.small input[type="datetime-local"], .input-wrapper.small input[type="month"], .input-wrapper.small input[type="week"], .input-wrapper.small input[type="email"], .input-wrapper.small input[type="number"], .input-wrapper.small input[type="search"], .input-wrapper.small input[type="tel"], .input-wrapper.small input[type="time"], .input-wrapper.small input[type="url"], .input-wrapper.small input[type="color"], .input-wrapper.small textarea {
+    width: calc(100% - 50px); }
   .input-wrapper.no-label textarea {
     width: 100%;
     height: 200px; }
@@ -4464,10 +4468,45 @@ aside {
     background-repeat: repeat-x;
     width: 100%;
     background-size: 40%; }
+  .register .body .main {
+    height: 100%;
+    position: relative; }
   .register .body .content {
-    color: #ffffff; }
+    color: #ffffff;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    .register .body .content .columns .columns {
+      padding: 0 40px; }
     .register .body .content h1, .register .body .content h2, .register .body .content h3, .register .body .content h4 {
+      color: #ffffff;
+      margin: 0 0 10px; }
+    .register .body .content p {
+      color: #cccccc;
+      margin: 0 0 20px; }
+    .register .body .content .button-outline {
+      border-color: #FFBE00;
+      background: none;
+      border-radius: 30px !important;
+      padding: 20px 30px;
+      width: 100%;
+      color: #FFBE00; }
+    .register .body .content form label {
       color: #ffffff; }
+    .register .body .content form .input-wrapper .icon {
+      background-color: #ffffff;
+      border-right: 1px solid #47474B;
+      background-size: 20px 20px;
+      line-height: 20px;
+      background-position: center center; }
+    .register .body .content form input[type="checkbox"] {
+      margin-bottom: 30px; }
+    .register .body .content form .button-large {
+      display: block;
+      width: 100%; }
+    .register .body .content form a {
+      color: #cccccc; }
 
 .hardware-dev-wrapper {
   width: 100%;
@@ -4481,6 +4520,11 @@ aside {
     top: 150px;
     z-index: 10;
     text-align: center; }
+    @media screen and (max-width: 641px) {
+      .hardware-dev-wrapper .title {
+        position: relative;
+        top: 0;
+        padding: 50px 20px; } }
     .hardware-dev-wrapper .title:before {
       content: '';
       display: block;
@@ -4488,30 +4532,77 @@ aside {
       width: 40px;
       height: 5px;
       background: #FFBE00; }
+      @media screen and (max-width: 641px) {
+        .hardware-dev-wrapper .title:before {
+          margin-left: 0; } }
     .hardware-dev-wrapper .title h1, .hardware-dev-wrapper .title p {
       color: #ffffff;
       margin: 0 0 5px; }
     .hardware-dev-wrapper .title h1 {
       font-size: 48px; }
+      @media screen and (max-width: 641px) {
+        .hardware-dev-wrapper .title h1 {
+          color: #47474B;
+          text-align: left;
+          font-size: 30px; } }
+    @media screen and (max-width: 641px) {
+      .hardware-dev-wrapper .title p {
+        display: none; } }
     .hardware-dev-wrapper .title .icon {
       width: 40px;
       height: 40px;
       display: block;
       margin: 10px auto; }
+      @media screen and (max-width: 641px) {
+        .hardware-dev-wrapper .title .icon {
+          display: none; } }
   .hardware-dev-wrapper .hd-col {
     width: 50%;
     float: left;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-transition: all .5s;
+    transition: all .5s; }
+    @media screen and (max-width: 641px) {
+      .hardware-dev-wrapper .hd-col {
+        width: 100%;
+        float: none; } }
     .hardware-dev-wrapper .hd-col.shift {
-      width: 100%; }
+      -webkit-transition: all .5s;
+      transition: all .5s; }
+    .hardware-dev-wrapper .hd-col .bg-light {
+      -webkit-transition: all .5s;
+      transition: all .5s; }
+      @media screen and (max-width: 1180px) {
+        .hardware-dev-wrapper .hd-col .bg-light {
+          height: 50px; } }
     .hardware-dev-wrapper .hd-col .detail, .hardware-dev-wrapper .hd-col .content {
-      padding: 0 100px 0 200px; }
-    .hardware-dev-wrapper .hd-col.hd-left.shift {
-      width: 100%; }
+      padding: 0 10% 0 25%; }
+    .hardware-dev-wrapper .hd-col.hd-left.shift-right {
+      width: 100%;
+      z-index: 10; }
+      .hardware-dev-wrapper .hd-col.hd-left.shift-right .bg-light {
+        height: auto; }
+    .hardware-dev-wrapper .hd-col.hd-left.shift-left {
+      z-index: 0;
+      width: 0; }
+      @media screen and (max-width: 641px) {
+        .hardware-dev-wrapper .hd-col.hd-left.shift-left {
+          width: 100%; } }
     .hardware-dev-wrapper .hd-col.hd-right {
       text-align: right; }
+      .hardware-dev-wrapper .hd-col.hd-right.shift-right {
+        z-index: 0;
+        width: 0; }
+        @media screen and (max-width: 641px) {
+          .hardware-dev-wrapper .hd-col.hd-right.shift-right {
+            width: 100%; } }
+      .hardware-dev-wrapper .hd-col.hd-right.shift-left {
+        width: 100%;
+        z-index: 10; }
+        .hardware-dev-wrapper .hd-col.hd-right.shift-left .bg-light {
+          height: auto; }
       .hardware-dev-wrapper .hd-col.hd-right .detail, .hardware-dev-wrapper .hd-col.hd-right .content {
-        padding: 0 200px 0 100px; }
+        padding: 0 25% 0 10%; }
     .hardware-dev-wrapper .hd-col .hd-featured {
       max-width: 240px;
       position: absolute;
@@ -4528,13 +4619,18 @@ aside {
           .hardware-dev-wrapper .hd-col .hd-featured.hd-featured-right {
             right: -140px; } }
   .hardware-dev-wrapper .bg {
-    height: 860px;
     position: relative; }
     .hardware-dev-wrapper .bg.bg-dark {
-      background: url(../images/bg/bg-blue.png) repeat; }
+      background: url(../images/bg/bg-blue.png) repeat;
+      height: 860px; }
+      @media screen and (max-width: 641px) {
+        .hardware-dev-wrapper .bg.bg-dark {
+          height: 230px; } }
       .hardware-dev-wrapper .bg.bg-dark .detail {
         -webkit-transform: translateX(-200%);
                 transform: translateX(-200%); }
+    .hardware-dev-wrapper .bg.bg-light {
+      background: url(../images/bg/bg.png) repeat; }
     .hardware-dev-wrapper .bg.bg-light-grey {
       background: url(../images/bg/bg-grey.png) repeat; }
     .hardware-dev-wrapper .bg.bg-darker {
@@ -4549,6 +4645,9 @@ aside {
         font-size: 38px;
         padding: 10px 0 0;
         position: relative; }
+        @media screen and (max-width: 1180px) {
+          .hardware-dev-wrapper .bg .detail h2, .hardware-dev-wrapper .bg .content h2 {
+            font-size: 26px; } }
         .hardware-dev-wrapper .bg .detail h2:before, .hardware-dev-wrapper .bg .content h2:before {
           content: '';
           display: block;
@@ -4566,14 +4665,45 @@ aside {
       transition: all .5s;
       -webkit-transform: translateX(0);
               transform: translateX(0); }
-      .hardware-dev-wrapper .bg .content.content-right.close {
-        -webkit-transform: translateX(-200%);
-                transform: translateX(-200%); }
       .hardware-dev-wrapper .bg .content .show-detail {
-        display: none; }
+        display: none;
+        position: relative; }
+        .hardware-dev-wrapper .bg .content .show-detail.show-detail-right {
+          background: url(../images/icons/arrow-yellow-next.svg) no-repeat right center;
+          background-size: 20px 25px;
+          padding-right: 30px; }
+        .hardware-dev-wrapper .bg .content .show-detail.show-detail-left {
+          background: url(../images/icons/arrow-yellow-prev.svg) no-repeat 0 center;
+          background-size: 20px 25px;
+          padding-left: 30px; }
         @media screen and (max-width: 1180px) {
           .hardware-dev-wrapper .bg .content .show-detail {
             display: block; } }
+      .hardware-dev-wrapper .bg .content.close .show-detail {
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        top: 0; }
+        .hardware-dev-wrapper .bg .content.close .show-detail span {
+          display: none; }
+      .hardware-dev-wrapper .bg .content.close .show-detail-right {
+        background: url(../images/icons/arrow-yellow-circle-prev.svg) no-repeat 0 center;
+        background-size: 100% 100%;
+        left: 50px; }
+        @media screen and (max-width: 641px) {
+          .hardware-dev-wrapper .bg .content.close .show-detail-right {
+            background: url(../images/icons/close.svg) no-repeat 0 center;
+            background-size: 100% 100%; } }
+      .hardware-dev-wrapper .bg .content.close .show-detail-left {
+        background: url(../images/icons/arrow-yellow-circle-next.svg) no-repeat right center;
+        background-size: 100% 100%;
+        right: 50px; }
+        @media screen and (max-width: 641px) {
+          .hardware-dev-wrapper .bg .content.close .show-detail-left {
+            background: url(../images/icons/close.svg) no-repeat right center;
+            background-size: 100% 100%; } }
     .hardware-dev-wrapper .bg .detail {
       display: block; }
       @media screen and (max-width: 1180px) {
@@ -4596,3 +4726,8 @@ aside {
     .hardware-dev-wrapper .bg .button {
       padding-top: 20px;
       padding-bottom: 20px; }
+
+.complete-modules {
+  background: #e2e3e8; }
+  .complete-modules .button-yellow {
+    color: #ffffff; }

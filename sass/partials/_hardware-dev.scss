@@ -12,6 +12,12 @@
 		z-index: 10;
 		text-align: center;
 
+		@media screen and (max-width: $break-phone)  {
+			position: relative;
+		    top: 0;
+		    padding: 50px 20px;
+		}
+
 		&:before {
 			content: '';
 			display: block;
@@ -19,6 +25,9 @@
 			width: 40px;
 			height: 5px;
 			background: $secondary-color;
+			@media screen and (max-width: $break-phone)  {
+				margin-left: 0;
+			}
 		}
 
 		h1, p {
@@ -28,6 +37,17 @@
 
 		h1 {
 			font-size: 48px;
+			@media screen and (max-width: $break-phone)  {
+				color: $body-color;
+				text-align: left;
+				font-size: 30px;
+			}
+		}
+
+		p {
+			@media screen and (max-width: $break-phone)  { 
+				display: none;
+			}
 		}
 
 		.icon {
@@ -35,6 +55,9 @@
 			height: 40px;
 			display: block;
 			margin: 10px auto;
+			@media screen and (max-width: $break-phone)  { 
+				display: none;
+			}
 		}
 	}
 
@@ -42,20 +65,72 @@
 		width: 50%;
 		float: left;
 		overflow: hidden;
+		transition: all .5s;
+		@media screen and (max-width: $break-phone)  { 
+			width: 100%;
+			float: none;
+		}
 
 		&.shift {
-			width: 100%;
+			transition: all .5s;
+			//position: absolute;
+		}
+
+		.bg-light {
+			transition: all .5s;
+			@media screen and (max-width: $break-laptop) {
+				height: 50px;
+			}
 		}
 
 		.detail, .content {
-			padding: 0 100px 0 200px;
+			padding: 0 10% 0 25%;
 		}
+
+		&.hd-left {
+			//left: 0;
+
+			&.shift-right {
+				width: 100%;
+				z-index: 10;
+
+				.bg-light {
+					height: auto;
+				}
+			}
+			&.shift-left {
+				z-index: 0;
+				width: 0;
+				@media screen and (max-width: $break-phone) {
+					width: 100%;
+				}
+			}
+		}
+
 
 		&.hd-right {
 			text-align: right;
+			//right: 0;
+
+			&.shift-right {
+				z-index: 0;
+				width: 0;
+				@media screen and (max-width: $break-phone) {
+					width: 100%;
+				}
+			}
+
+			&.shift-left {
+				width: 100%;
+				z-index: 10;
+
+				.bg-light {
+					height: auto;
+				}
+			}
 
 			.detail, .content {
-				padding: 0 200px 0 100px;
+				padding: 0 25% 0 10%;
 			}
 		}
 
@@ -82,17 +157,23 @@
 	}
 
 	.bg {
-		height: 860px;
 		position: relative;
-
 
 		&.bg-dark {
 			background: url(../images/bg/bg-blue.png) repeat;
+			height: 860px;
+			@media screen and (max-width: $break-phone) {
+				height: 230px;
+			}
 
 			.detail {
 				transform: translateX(-200%); 
 
 			}
+		}
+
+		&.bg-light {
+			background: url(../images/bg/bg.png) repeat;
 		}
 
 		&.bg-light-grey {
@@ -116,6 +197,9 @@
 				font-size: 38px;
 				padding: 10px 0 0;
 				position: relative;
+				@media screen and (max-width: $break-laptop) {
+					font-size: 26px;
+				}
 
 				&:before {
 					content: '';
@@ -150,21 +234,79 @@
 			// 	}
 			// }
 
-			&.content-right {
-				&.close {
-					transform: translateX(-200%); 
-				}
-			}
+			// &.content-right {
+			// 	&.close {
+			// 		transform: translateX(-200%); 
+			// 	}
+			// }
 			
 
 			
 
 			.show-detail {
 				display: none;
+				position: relative;
+
+				&.show-detail-right {
+					background: url(../images/icons/arrow-yellow-next.svg) no-repeat right center;
+					background-size: 20px 25px;
+					padding-right: 30px;
+				}
+
+				&.show-detail-left {
+					background: url(../images/icons/arrow-yellow-prev.svg) no-repeat 0 center;
+					background-size: 20px 25px;
+					padding-left: 30px;
+				}
+
+
 				@media screen and (max-width: $break-laptop) {
 					display: block;
 				}
 
+			}
+
+
+			&.close {
+				.show-detail {
+					padding: 0;
+					width: 30px;
+					height: 30px;
+					display: block;
+					position: absolute;
+   					top: 0;
+
+					span {
+						display: none;
+					}
+				}	
+			}
+
+			&.close {
+				.show-detail-right {
+					background: url(../images/icons/arrow-yellow-circle-prev.svg) no-repeat 0 center;
+					background-size: 100% 100%;
+					left: 50px;
+
+					@media screen and (max-width: $break-phone) {
+						background: url(../images/icons/close.svg) no-repeat 0 center;
+						background-size: 100% 100%;
+					}	
+				}	
+			}
+
+
+			&.close {
+				.show-detail-left {
+					background: url(../images/icons/arrow-yellow-circle-next.svg) no-repeat right center;
+					background-size: 100% 100%;
+					right: 50px;
+					@media screen and (max-width: $break-phone) {
+						background: url(../images/icons/close.svg) no-repeat right center;
+						background-size: 100% 100%;
+					}	
+
+				}	
 			}
 
 			
@@ -211,5 +353,13 @@
 			padding-bottom: 20px;
 		}
 
+	}
+}
+
+.complete-modules {
+	background: #e2e3e8;
+
+	.button-yellow {
+		color: $white;
 	}
 }

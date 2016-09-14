@@ -46,7 +46,7 @@
                             <img class="hd-featured hd-featured-left" src="images/products/product-6.png" />
                             <div class="content content-bottom content-left">
                                 <h2>The Trimble<br /><span>EMPOWER</span> Module<br />development Kit.</h2>
-                                <a class="show-detail show-detail-left" href="#">Learn More</a>
+                                <a class="show-detail show-detail-left" href="#"><span>Learn More</span></a>
                             </div>
 
                             <!-- <div class="detail detail-left content-bottom">
@@ -88,13 +88,13 @@
                             <img class="hd-featured hd-featured-right" src="images/products/product-6.png" />
                             <div class="content content-bottom content-right">
                                 <h2 class="align-right">The Trimble<br /><span>EMPOWER</span> USB<br />Module.</h2>
-                                <a class="show-detail show-detail-right" href="#">Learn More</a>
+                                <a class="show-detail show-detail-right" href="#"><span>Learn More</span></a>
                             </div>
 
-                            <div class="detail detail-right content-bottom">
+                          <!--   <div class="detail detail-right content-bottom">
                                 <h2 class="align-right">The Trimble<br /><span>EMPOWER</span> USB<br />Module.</h2>
                                 <a href="" class="show-list icon icon-close">Close</a>
-                            </div>
+                            </div> -->
 
 
                         </div>
@@ -125,7 +125,31 @@
                             </div>
                         </div>
                     </div><!-- END HD COL -->
-                </div>
+                </section>
+
+                <section class="complete-modules">
+                    <div class="content">
+                        <div class="row">
+
+                            <div class="small-12 medium-push-1 medium-10 large-push-1 large-10 columns">
+
+                                <div class="row">
+                                    <div class="small-12 medium-6 medium-push-6 columns">
+                                        <img src="images/products/complete-modules.jpg" />
+                                    </div>
+
+                                    <div class="small-12 medium-6 medium-pull-6 columns">
+                                        <h2>Looking for released Trimble EMPOWER Modules?</h2>
+                                        <p>Click below to go to the Trimble EMPOWER site, where you can see information on the platform as well as currently available modules.</p>
+                                        <p><a href="" class="button button-yellow button-large">Learn More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
 
 
 

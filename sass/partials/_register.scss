@@ -13,11 +13,71 @@
 		    background-size: 40%;
 		}
 
+		.main {
+			height: 100%;
+			position: relative;
+		}
+
 		.content {
 			color: $white;
+			@include vertical-align();
+
+			.columns {
+				.columns {
+					padding: 0 40px;
+				}
+			}
 
 			h1, h2, h3, h4 {
 				color: $white;
+				margin: 0 0 10px;
+			}
+
+			p {
+				color: $grey-md;
+				margin: 0 0 20px;
+			}
+
+			.button-outline {
+				border-color: $secondary-color;
+				background: none;
+				border-radius: 30px !important;
+				padding: 20px 30px;
+				width: 100% ;
+				color: $secondary-color;
+			}
+
+			
+
+			form {
+
+				label {
+					color: $white;
+				}
+
+				.input-wrapper {
+					.icon {
+						background-color: $white;
+						border-right: 1px solid $body-color;
+						background-size: 20px 20px;
+						line-height: 20px;
+						background-position: center center;
+					}
+				}
+
+				input[type="checkbox"] {
+					margin-bottom: 30px;
+				}
+
+				.button-large {
+					display: block;
+					width: 100%;
+				}
+
+				a {
+					color: $grey-md;
+				}
+
 			}
 		}
 	}
