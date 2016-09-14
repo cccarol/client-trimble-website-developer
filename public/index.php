@@ -188,21 +188,21 @@
 
                                 <ul class="accordion" data-accordion="">
                                     <li class="accordion-navigation">
-                                      <a href="#faq-1" aria-expanded="false">Proin urna enim, semper at egestas sed, elementum in justo?</a>
+                                      <a href="#faq-1" aria-expanded="false" class="accordion-link">Proin urna enim, semper at egestas sed, elementum in justo?</a>
                                       <div id="faq-1" class="content">
                                         <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure qui in ea voluptate velit esse quam nihil , vel illum qui  eum quo nulla pariatur</p>
                                       </div>
                                     </li>
 
                                     <li class="accordion-navigation">
-                                      <a href="#faq-2" aria-expanded="false">Proin urna enim, semper at egestas sed, elementum in justo?</a>
+                                      <a href="#faq-2" aria-expanded="false" class="accordion-link">Proin urna enim, semper at egestas sed, elementum in justo?</a>
                                       <div id="faq-2" class="content">
                                         <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure qui in ea voluptate velit esse quam nihil , vel illum qui  eum quo nulla pariatur</p>
                                       </div>
                                     </li>
 
                                     <li class="accordion-navigation">
-                                      <a href="#faq-3" aria-expanded="false">Proin urna enim, semper at egestas sed, elementum in justo?</a>
+                                      <a href="#faq-3" aria-expanded="false" class="accordion-link">Proin urna enim, semper at egestas sed, elementum in justo?</a>
                                       <div id="faq-3" class="content">
                                         <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure qui in ea voluptate velit esse quam nihil , vel illum qui  eum quo nulla pariatur</p>
                                       </div>

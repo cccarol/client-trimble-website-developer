@@ -1,3 +1,27 @@
+.hardware-dev {
+	.bg-test {
+		position: relative;
+
+		h1 {
+			color: $white;
+		}
+
+		&:before {
+			content:'';
+			display: block;
+			width: 100%;
+			height: 500px;
+			background: url(../images/bg/bg-blue.png) repeat 0 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom:0;
+		}
+	}
+}
+
+
 .info-slider {
 	position: relative;
 	background: url(../images/bg/bg.png) repeat 0 0;
@@ -175,6 +199,34 @@
 			font-size: 15px;
 			font-weight: $font-weight--light;
 			margin-bottom: 5px;
+		}
+	}
+}
+
+
+.slider-subnav {
+	margin: 60px 0 30px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin: 0 10px 0 0;
+			padding: 0;
+
+			a {
+				font-size: 18px;
+				color: $body-color;
+				border-bottom: 2px solid transparent;
+
+				&.selected {
+					color: $blue-dk;
+					border-color: $secondary-color;
+				}
+			}
 		}
 	}
 }

@@ -1,16 +1,42 @@
 header {
 	width: 100%;
 	background: $white;
-	border-top: $grey-md 1px solid;
+	border-bottom: $grey-md 1px solid;
 	padding: 30px 20px;
 	position: relative;
 	z-index: 10;
+
+	&.open {
+		z-index: 20;
+	}
+
+	&.bg-dropdown {
+		&:after {
+			content: '';
+			height: 60px;
+			display: block;
+			width: 100%;
+			position: absolute;
+			top: 107px;
+			background: $white;
+			z-index: 4;
+			width: calc(100% + 0px);
+			margin: 0 -20px;
+			border-bottom: $grey-md 1px solid;
+		}
+	}
 
 	.logo {
 		width: 205px;
 		float: left;
 		z-index: 10;
 		position: relative;
+		
+		img {
+			@media screen and (max-width: $break-phone) {
+				margin: 0;
+			}
+		}
 	}
 
 	.menu {
@@ -108,18 +134,53 @@ header {
 							font-weight: $font-weight--semi-bold;
 						}
 					}
+
+
+
+					.nav-subnav {
+						ul {
+							display: block;
+							position: absolute; 
+							top: 82px;
+
+							li {
+								float:none;
+								display: inline-block;
+								position: relative;
+
+								&:hover > ul {
+									display:inherit;
+								}
+
+								 a {
+								 	font-size: 15px;
+								 	font-weight: $font-weight--normal;
+								 }
+							}
+						}
+					}
+
+
 				}
 			}
 		}
 
+
+
+
 		.utility {
-			@media screen and (max-width: $break-tablet) {
+			@media screen and (max-width: $break-laptop) {
 				float: right;
 			}
 
 			@media screen and (max-width: $break-phone) {
 				display: none;
 			}
+
+			.button {
+				margin: 0;
+			}
+			
 			ul {
 				margin: 0;
 				padding: 0;
@@ -159,7 +220,7 @@ header {
 				background: $white;
 				position: absolute;
 				right: -30px;
-    			margin-top: 20px;
+				margin-top: 20px;
 
 
 				.profile-simple {
@@ -259,7 +320,11 @@ header {
 							text-align: center;
 							font-weight: $font-weight--semi-bold;
 						}
+
+
 					}
+
+					
 				}
 			}
 
@@ -267,15 +332,15 @@ header {
 				position: absolute;
 
 				@media screen and (max-width: $break-tablet) {
-				    top: 5%;
-				    right: 7%;
+					top: 5%;
+					right: 7%;
 				}
 
 				@media screen and (max-width: $break-phone) {
-				    top: 90%;
-				    display: block;
-				    left: 5%;
-				    right: 5%;
+					top: 90%;
+					display: block;
+					left: 5%;
+					right: 5%;
 				}
 
 				ul {
@@ -300,5 +365,30 @@ header {
 	}
 }
 
+.nav-subnav, .mobile-back {
+	display: none;
+}
+
+.mobile-back {
+	color: $grey-md;
+	text-align: center;
+}
+
+
+.show-children {
+	.nav-subnav {
+		ul {
+			width: 100%;
+
+			li {
+				display: block !important;
+
+				a {
+					color: $white !important;
+				}
+			}
+		}
+	}
+}
 
 

@@ -1,10 +1,12 @@
 .accordion {
+	padding:  0;
+
 	.accordion-navigation {
 		border-bottom: 1px solid rgba($grey-md, .4);
 		padding: 20px 0;
 		margin: 0 0 20px 0;
 
-		a {
+		.accordion-link {
 			background: transparent url(../images/icons/arrow-grey-down.svg) no-repeat right center;
 			color: $white;
 			font-size: 22px;
@@ -15,12 +17,17 @@
 				background: transparent url(../images/icons/arrow-grey-down.svg) no-repeat right center;
 				opacity: .9;
 			}
+
+			p {
+				margin-bottom: 0;
+			}
 		}
 
 		&.active {
-			a {
+			.accordion-link {
 				background: transparent url(../images/icons/close.svg) no-repeat right center;
 				color: $white;
+				opacity: 1;
 
 				&:hover {
 					background: transparent url(../images/icons/close.svg) no-repeat right center;
@@ -32,6 +39,254 @@
 			background: none;
 			padding: 0;
 			margin-top: 20px;
+		}
+	}
+
+
+	&.event-list {
+
+		@media screen and (max-width: $break-tablet) {
+			padding: 0;
+		}
+
+		.accordion-navigation {
+
+			.accordion-link {
+				line-height: 1.2;
+				color: $body-color;
+				font-weight: $font-weight--normal;
+
+				.date, .location {
+					display: block;
+					color: darken($grey-md, 20%);
+					font-size: 16px;
+					font-weight: $font-weight--normal;
+					margin: 10px 0;
+				}
+
+				.location { 
+					font-size: 15px;
+				}
+			}
+
+			&.active {
+				.accordion-link {
+					font-size: 28px;
+					color: $body-color;
+					opacity: 1;
+					@media screen and (max-width: $break-tablet) {
+						font-size: 25px;
+					}
+				}
+			}
+		}
+
+		.content {
+			width: calc(100% - 50px);
+			@media screen and (max-width: $break-tablet) {
+				width: 100%;
+			}
+		}
+
+	}
+
+	&.news-list {
+
+		@media screen and (max-width: $break-tablet) {
+			padding: 0;
+		}
+
+		.accordion-navigation {
+
+			.accordion-link {
+				line-height: 1.2;
+				color: $body-color;
+				font-weight: $font-weight--normal;
+
+				.date {
+					font-style: italic;
+					display: block;
+					color: darken($grey-md, 20%);
+					font-size: 16px;
+					font-weight: $font-weight--normal;
+					margin-bottom: 10px;
+				}
+			}
+
+			&.active {
+				.accordion-link {
+					font-size: 28px;
+					color: $body-color;
+					opacity: 1;
+					@media screen and (max-width: $break-tablet) {
+						font-size: 25px;
+					}
+				}
+			}
+		}
+		
+	}
+
+
+	&.file-list {
+
+	.accordion-navigation {
+
+		.accordion-link {
+
+			p {
+				color: darken($grey-md, 20%);
+				font-size: 15px;
+				font-weight: $font-weight--normal;
+			}
+
+		}
+
+		.icon {
+			float: left;
+			width: 43px;
+		    height: 45px;
+		    padding: 10px 0;
+		}
+
+		.file-content {
+			float: right;
+			width: calc(100% - 80px);
+		}
+
+		&.active {
+
+			.icon {
+				width: 57px;
+    			height: 75px;
+			}
+			.file-content {
+				float: right;
+				width: calc(100% - 100px);
+			}
+
+			h3 {
+				font-size: 28px;
+				@media screen and (max-width: $break-tablet) {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+
+	.file-content-detail {
+		width: calc(100% - 100px);
+		margin-left: 100px;
+		padding-right: 100px !important;
+
+		&.active {
+			margin-top: 0  !important;
+		}
+		
+
+		.button-yellow {
+			color: $white;
+		}
+
+		p {
+			font-size: 18px;
+
+			@media screen and (max-width: $break-tablet) {
+				font-size: 15px;
+			}
+		}
+	}
+
+}
+
+
+}
+
+
+.hero-inner-subnav {
+	.subnav {
+
+		position: absolute;
+		left: 0;
+		margin: 28px auto 0;
+		padding: 0 15px;
+		width: 90%;
+
+		@media screen and (min-width: $break-phone) {
+			top: 0;
+			float: left;
+			width: 1300px;
+			right: 0;
+		}
+
+		.subnav-accordion {
+			float: left;
+			@media screen and (max-width: $break-phone) {
+				float: none;
+			}
+
+
+			.accordion-navigation {
+				padding: 0;
+
+				@media screen and (min-width: $break-phone) {
+					border: none;
+				}
+
+				&.active {
+					a {
+						border: none;
+					}
+				}
+
+				a:focus, a:active {
+					border: none;
+				}
+
+				.accordion-link {
+					display: none;
+
+					@media screen and (max-width: $break-phone) {
+						display: block;
+					}
+				}
+
+
+				.content {
+					display: block;
+
+					@media screen and (max-width: $break-phone) {
+						display: none;
+					}
+
+					&.active {
+						display: block;
+					}
+
+
+					a {
+						color: rgba($white, .6);
+						border-bottom: 2px solid transparent;
+						display: block;
+						margin: 0 0 10px;
+						font-weight: $font-weight--semi-bold;
+
+						&:first-child {
+							@media screen and (max-width: $break-phone) {
+								display: none;
+							}
+
+						}
+
+						&.active {
+							@media screen and (min-width: $break-phone) {
+								color: $white;
+								border-bottom-color: $secondary-color;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }

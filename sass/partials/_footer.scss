@@ -5,6 +5,7 @@ footer {
 	padding: 70px 20px;
 	position: relative;
 	z-index: 5;
+	clear: both;
 
 	@media screen and (max-width: $break-laptop) {
 		padding: 30px 20px;

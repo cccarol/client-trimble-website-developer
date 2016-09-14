@@ -1,0 +1,151 @@
+.showcase-featured {
+	margin: 0 -30px;
+
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		@media screen and (max-width: $break-laptop) {
+			background: url(../images/icons/arrow-yellow-circle-next.svg) no-repeat right 30px bottom 30px ;
+			background-size: 30px 30px;
+		}
+
+		@media screen and (max-width: $break-phone) {
+			background: url(../images/icons/arrow-yellow-circle-next.svg) no-repeat right 60px bottom 30px ;
+			background-size: 30px 30px;
+		}
+	}
+
+	.columns {
+		&:first-child {
+			.showcase-item {
+				margin-top: 100px;
+			}
+		}
+	}
+
+	.showcase-item {
+		height: 500px;
+		position: relative;
+		@media screen and (max-width: $break-phone) {
+			height: 350px;
+			margin: 0 0 20px;
+		}
+
+		.content {
+			padding: 50px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			color: $white;
+			@media screen and (max-width: $break-laptop) {
+				padding: 30px 60px 30px 30px;
+			}
+
+			@media screen and (max-width: $break-phone) {
+				bottom: 30px;
+				left: 30px;
+				padding: 0 60px 0 30px;
+			}	
+
+			h2 {
+				font-size: 32px;
+				font-weight: $font-weight--bold;
+				color: $white;
+				margin: 0;
+			}
+
+			.author {
+				font-size: 15px;
+
+				.icon {
+					height: 16px;
+					width: 16px;
+					margin: 0 5px 0 0;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+// Similar styles to NEWS list 
+.showcase-list {
+	.showcase-item {
+		padding: 0;
+		border-bottom: 1px solid $grey-md;
+		margin: 0;
+
+		&:after {
+	        @include clearfix();
+	    }
+
+		a {
+			display: block;
+			color: $body-color;
+			background: url(../images/icons/arrow-grey-next.svg) no-repeat right center;
+			padding: 20px 50px 20px 20px;
+
+			&:after {
+		        @include clearfix();
+		    }
+
+		    &:hover {
+		    	background-color: $grey-md;
+		    }
+
+			.icon {
+				width: 16px;
+				height: 16px;
+				display: inline-block;
+				margin: 0 5px 0 0;
+
+			}
+		}
+	}
+}
+
+.showcase-gallery {
+	width: 100%;
+	margin: 0 auto 30px;
+
+	&:after {
+		@include clearfix();
+	}
+	.showcase-gallery-item {
+		background-size: cover;
+		width: calc(50% - 15px);
+
+	}
+
+	.showcase-gallery-item-full {
+		height: 600px;
+		float: left;
+		@media screen and (max-width: $break-phone) {
+			float: none;
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+
+	.showcase-gallery-item-half {
+		height: 285px;
+		float: right;
+		margin-bottom: 30px;
+		@media screen and (max-width: $break-phone) {
+			width: calc(50% - 15px);
+			float: left
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+			@media screen and (max-width: $break-phone) {
+				float: right;
+			}
+		}
+	}
+
+
+}
+

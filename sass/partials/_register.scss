@@ -1,0 +1,26 @@
+.register {
+
+
+	.body {
+		background: url(../images/bg/aerial-2.jpg) center center fixed;
+		background-size: 100% 100%;
+		position: relative;
+		height: 100%;
+
+		&:before {
+			background-repeat: repeat-x;
+		    width: 100%;
+		    background-size: 40%;
+		}
+
+		.content {
+			color: $white;
+
+			h1, h2, h3, h4 {
+				color: $white;
+			}
+		}
+	}
+	
+
+}

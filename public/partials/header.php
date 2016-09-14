@@ -12,17 +12,49 @@
 			</div>
 			
 			<div class="nav-wrapper">
+
+
 				
 				<nav>
+
+					<a class="mobile-back" href="#">Back</a>
 					<ul>
-						<li class="home-link"><a href="">Home</a></li>
-						<li><a href="">Hardware Development</a></li>
-						<li><a href="">Software Development</a></li>
-						<li><a href="">Showcase</a></li>
-						<li><a href="">Community</a></li>
-						<li><a href="">Contact</a></li>
+						<li class="home-link"><a href="index.php">Home</a></li>
+						<li class="dropdown-li"><a class="dropdown" href="" data-id="hardwaredev-subnav">Hardware Development</a>
+							<div class="nav-subnav" id="hardwaredev-subnav">
+								<ul>
+									<li><a href="hardware-development.php">Available Modules</a></li>
+									<li><a href="hardware-development-overview.php">Resources</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="software-development.php">Software Development</a></li>
+						<li class="dropdown-li"><a class="dropdown" href="" data-id="showcase-subnav">Showcase</a>
+							<div class="nav-subnav" id="showcase-subnav">
+								<ul>
+									<li><a href="showcase.php">Gallery</a></li>
+									<li><a href="showcase-submit.php">Submit</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="dropdown-li"><a class="dropdown" href="" data-id="community-subnav">Community</a>
+							<div class="nav-subnav" id="community-subnav">
+								<ul>
+									<li><a href="community-news.php">News</a></li>
+									<li><a href="community-events.php">Events</a></li>
+									<li><a href="community-partners.php">Partners</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="contact.php">Contact</a></li>
 					</ul>
 				</nav>
+
+
+
+
+
+
 				<div class="utility">
 					<ul>
 						<li class="login"><a class="button button-outline" href="">Login/Register</a></li>
