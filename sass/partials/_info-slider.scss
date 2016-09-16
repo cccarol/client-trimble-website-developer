@@ -137,6 +137,10 @@
 				@media screen and (max-width: $break-phone) {
 					left: -33%;
 				}
+
+				@media screen and (max-width: $break-xs) {
+					left:-53%;
+				}
 			}
 
 			&.close {
@@ -169,6 +173,10 @@
 
 				@media screen and (max-width: $break-phone) {
 					right: -48%;
+				}
+
+				@media screen and (max-width: $break-xs) {
+					right: -71%;
 				}
 
 
@@ -246,7 +254,7 @@
 	transform: translateX(200%); 
 }
 
-.slider-list-left.close2 {
+.slider-list-left.close {
 	transform: translateX(-200%); 
 }
 

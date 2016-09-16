@@ -68,7 +68,7 @@
 
 
                         <div class="row">
-                            <div class="small-12 medium-12 large-push-3 large-6 columns">
+                            <div class="small-12 medium-12 medium-push-2 medium-8 large-push-3 large-6 columns">
                                 <nav class="subnav">
                                     <ul>
                                         <li class="active">
@@ -80,7 +80,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="small-12 medium-12 large-push-3 large-9 columns">
+                            <div class="small-12 medium-12 medium-push-2 medium-8 large-push-3 large-9 columns">
 
                                 <ul class="accordion file-list" data-accordion="">
                                     <li class="accordion-navigation">

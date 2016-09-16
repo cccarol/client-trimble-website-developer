@@ -12,6 +12,10 @@
 			padding: 0;
 		}
 
+		@media screen and (min-width: $break-phone) {
+			background: url(../images/bg/aerial-2.jpg) center center scroll;
+		}
+
 		&:before {
 			background-repeat: repeat-x;
 		    width: 100%;

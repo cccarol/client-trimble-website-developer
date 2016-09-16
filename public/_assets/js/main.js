@@ -184,8 +184,8 @@ $(document).ready(function() {
             }, 300); // Fixes issue where scrollbar doesnt show up
         });
 
-        // Width is less than 768
-        if (windowSize <= 768) {
+        // Width is less than 1024
+        if (windowSize <= 1024) {
             $('.dropdown-li .dropdown').click(function(tabletNav) {
                 tabletNav.preventDefault();
                 $('nav ul li').hide();
@@ -206,8 +206,8 @@ $(document).ready(function() {
             });
               
         }
-        // Width is greater than 768
-        else if (windowSize >= 769) {
+        // Width is greater than 1024
+        else if (windowSize >= 1024) {
 
 
 

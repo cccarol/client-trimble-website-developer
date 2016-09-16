@@ -114,6 +114,9 @@ blockquote {
     padding: 0 100px;
     margin: 50px auto;
     font-style: 22px;
+    @media screen and (max-width: $break-phone) {
+        padding: 0 20px;
+    }
 
     .author {
         color: $body-color;
@@ -393,7 +396,7 @@ input:checked ~ label {
     text-align: center;
 
     &.button-large {
-        padding: 17px 90px;
+        padding: 17px 50px;
     }
 
     &.button-yellow {
@@ -527,6 +530,7 @@ section {
 
 .bg-pattern {
     background: url(../images/bg/bg.png) 0 0 repeat;
+    overflow: hidden;
 }
 
 // Social. Appears on Showcase . 

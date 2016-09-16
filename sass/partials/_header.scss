@@ -95,6 +95,20 @@ header {
 		position: relative;
 		z-index: 5;
 
+		@media screen and (max-width: $break-laptop) {
+			background: url(../images/bg/bg-blue.png) repeat 0 0;
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			transform: translateY(-200%); 
+		}
+
+
+
 		nav, .utility {
 			float: left;
 		}
@@ -299,15 +313,9 @@ header {
 
 
 		&.open {
-			display: block;
-			background: url(../images/bg/bg-blue.png) repeat 0 0;
-			position: fixed;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			width: 100%;
-			height: 100%;
+			//display: block;
+			transform: translateY(0%); 
+			
 
 			nav {
 				display: block;

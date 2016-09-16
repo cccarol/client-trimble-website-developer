@@ -147,11 +147,20 @@
 			width: 43px;
 		    height: 45px;
 		    padding: 10px 0;
+		    @media screen and (max-width: $break-xs) {
+		    	display: none;
+		    }
+
+
 		}
 
 		.file-content {
 			float: right;
 			width: calc(100% - 80px);
+			@media screen and (max-width: $break-xs) {
+				float: none;
+				width: 100%;
+			}
 		}
 
 		&.active {
@@ -159,10 +168,17 @@
 			.icon {
 				width: 57px;
     			height: 75px;
+    			@media screen and (max-width: $break-xs) {
+    				display: none;
+    			}
 			}
 			.file-content {
 				float: right;
 				width: calc(100% - 100px);
+				@media screen and (max-width: $break-xs) {
+					width: 100%;
+					float: none;
+				}
 			}
 
 			h3 {
@@ -178,6 +194,12 @@
 		width: calc(100% - 100px);
 		margin-left: 100px;
 		padding-right: 100px !important;
+		@media screen and (max-width: $break-xs) {
+			width: 100%;
+			margin-left: 0;
+			padding-right: 0;
+			float: none;
+		}
 
 		&.active {
 			margin-top: 0  !important;
@@ -212,7 +234,7 @@
 		padding: 0 15px;
 		width: 90%;
 
-		@media screen and (min-width: $break-phone) {
+		@media screen and (min-width: 769px) {
 			top: 0;
 			float: left;
 			width: 1300px;
@@ -246,7 +268,7 @@
 				.accordion-link {
 					display: none;
 
-					@media screen and (max-width: $break-phone) {
+					@media screen and (max-width: $break-phone) {   
 						display: block;
 					}
 				}
