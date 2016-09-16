@@ -1,5 +1,9 @@
 .showcase-featured {
 	margin: 0 -30px;
+	@media screen and (max-width: $break-laptop) {
+		margin: 0;
+	}
+
 
 	a {
 		display: block;

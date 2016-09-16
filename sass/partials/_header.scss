@@ -11,6 +11,8 @@ header {
 	}
 
 	&.bg-dropdown {
+
+
 		&:after {
 			content: '';
 			height: 60px;
@@ -92,7 +94,6 @@ header {
 		float: right;
 		position: relative;
 		z-index: 5;
-		transition: all .5s;
 
 		nav, .utility {
 			float: left;
@@ -118,6 +119,11 @@ header {
 						color: $body-color;
 						font-size: 16px;
 						font-weight: $font-weight--normal;
+
+						@media screen and (max-width: 1310px) {
+							padding: 10px;
+							font-size: 15px;
+						}
 
 						@media screen and (max-width: $break-tablet) {
 							font-size: 24px;
@@ -169,6 +175,13 @@ header {
 
 
 		.utility {
+			padding-left: 20px;
+
+			@media screen and (max-width: 1310px) {
+				padding-left: 10px;
+			}
+
+
 			@media screen and (max-width: $break-laptop) {
 				float: right;
 			}
@@ -331,7 +344,7 @@ header {
 			.utility {
 				position: absolute;
 
-				@media screen and (max-width: $break-tablet) {
+				@media screen and (max-width: $break-laptop) {
 					top: 5%;
 					right: 7%;
 				}
@@ -348,6 +361,12 @@ header {
 
 						@media screen and (max-width: $break-phone) {
 							display: block;
+						}
+
+						&.loggedin {
+							@media screen and (max-width: $break-phone) {
+								display: none;
+							}
 						}
 						.button-outline {
 							background: none;

@@ -6,6 +6,11 @@
 		background-size: 100% 100%;
 		position: relative;
 		height: 100%;
+		padding-top: 100px;
+
+		@media screen and (min-width: $large-breakpoint) {
+			padding: 0;
+		}
 
 		&:before {
 			background-repeat: repeat-x;
@@ -20,7 +25,9 @@
 
 		.content {
 			color: $white;
-			@include vertical-align();
+			@media screen and (min-width: $large-breakpoint) {
+				@include vertical-align();
+			}
 
 			.columns {
 				.columns {
@@ -50,6 +57,7 @@
 			
 
 			form {
+				margin: 40px 0;
 
 				label {
 					color: $white;

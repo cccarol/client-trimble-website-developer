@@ -16,6 +16,7 @@
 			position: relative;
 		    top: 0;
 		    padding: 50px 20px;
+		    margin-bottom: 40px;
 		}
 
 		&:before {
@@ -64,11 +65,17 @@
 	.hd-col {
 		width: 50%;
 		float: left;
-		overflow: hidden;
+		//overflow: hidden;
 		transition: all .5s;
+
+		@media screen and (max-width: $break-laptop)  { 
+			overflow: hidden;
+		}
+
 		@media screen and (max-width: $break-phone)  { 
 			width: 100%;
 			float: none;
+			margin-bottom: 100px;
 		}
 
 		&.shift {
@@ -89,6 +96,18 @@
 
 		&.hd-left {
 			//left: 0;
+
+			
+			&:after {
+				@media screen and (max-width: $break-phone)  { 
+					content: 'OR';
+					font-size: 20px;
+					text-align: center;
+					font-weight: $font-weight--semi-bold;
+					display: block;
+					margin: 40px 0 0;
+				}
+			}
 
 			&.shift-right {
 				width: 100%;
@@ -130,7 +149,7 @@
 			}
 
 			.detail, .content {
-				padding: 0 25% 0 10%;
+				padding: 0 25% 20px 10%;
 			}
 		}
 
@@ -204,7 +223,7 @@
 				&:before {
 					content: '';
 					display: block;
-					top: -10px;
+					top: 0;
 					width: 15px;
 					height: 5px;
 					background: $secondary-color;
@@ -344,7 +363,7 @@
 			}
 
 			.button {
-				top: -30px;
+				margin: -50px 0 40px;
 			}
 		}
 

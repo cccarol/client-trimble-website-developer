@@ -37,11 +37,11 @@
                 <section class="main">
                     <div class="content">
                         <div class="row">
-                            <div class="small-12 medium-push-1 medium-10 large-push-2 large-8  columns">
+                            <div class="small-12 medium-push-1 medium-10   columns">
                                 <div class="row">
                                     <div class="small-12 medium-6 columns">
-                                        <h1>Are you a registered EMPOWER Developer?</h1>
-                                        <p>Login to your Trimble account below.</p>
+                                        <h1>Are you a registered <span>EMPOWER</span> Developer?</h1>
+                                        <p class="larger">Login to your Trimble account below.</p>
                                         <form>
                                             <div class="input-wrapper small">
                                                 <label class="icon icon-user">User</label>

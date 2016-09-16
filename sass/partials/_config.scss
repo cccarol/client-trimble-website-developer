@@ -39,8 +39,19 @@ $base__line-height		  : 1.6;
 
 
 // Media Q helpers
+// $break-laptop			  : 1180px;
+// $break-tablet			  : 768px;
+$break-xs 				  : 641px;
+
+
 $break-laptop			  : 1180px;
-$break-tablet			  : 768px;
-$break-phone			  : 641px;
+$break-tablet			  : $medium-breakpoint;
+$break-phone			  : $small-breakpoint;
+
+
+// $small-breakpoint:  em-calc(768)  !default;
+// $medium-breakpoint: em-calc(1024) !default;
+// $large-breakpoint:  em-calc(1440) !default;
+// $xlarge-breakpoint: em-calc(1920) !default;
 
 

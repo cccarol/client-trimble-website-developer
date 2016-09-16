@@ -1,4 +1,13 @@
 .home {
+
+	.body {
+		&:before {
+			@media screen and (max-width: $break-laptop) {
+				display: none;
+			}
+		}
+	}
+
 	.hero {
 		height: 650px;
 		width: calc(100% + 40px);
@@ -6,6 +15,27 @@
 		position: relative;
 		margin: 0 -20px 0;
 		padding: 100px 0 0;
+
+		&:before {
+		    content: '';
+		    background: url(../images/icons/arrows-yellow-three.png);
+		    background-size: 100% 100%;
+		    width: 18px;
+		    height: 96px;
+		    position: absolute;
+		    z-index: 10;
+		    top: 78px;
+		    left: 22%;
+		    @media screen and (max-width: $break-laptop) {
+		    	display: none;
+		    }
+		}
+
+		@media screen and (max-width: $break-laptop) {
+			padding: 0;
+			width: 100%;
+			margin: 0;
+		}
 
 
 		.hero-image {

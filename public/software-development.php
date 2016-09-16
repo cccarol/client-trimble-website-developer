@@ -40,7 +40,7 @@
                     
                     <div class="icon icon-paper icon-png"></div>
                     <div class="row">
-                        <div class="small-12 medium-push-3 medium-9 large-push-3 large-5 columns">
+                        <div class="small-12 medium-push-4 medium-8 large-push-3 large-5 columns">
                             
                             <div class="hero-inner-content">
                                 <h1>Trimble <span>EMPOWER</span> Software Development Overview.</h1>

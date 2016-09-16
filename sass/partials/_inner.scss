@@ -56,10 +56,12 @@ aside {
 		margin: 0;
 		width: calc(100% - 250px);
 		float: none;
+		max-width: 660px;
 	}
 
 	@media screen and (max-width: $break-phone) {
 		width: calc(100% - 70px);
+		max-width: 430px;
 	}
 
 	&:before {
@@ -111,6 +113,12 @@ aside {
 	@media screen and (max-width: $break-tablet) {
 		top: 0;
 		margin-bottom: 0;
+		height: 600px;
+	}
+
+
+	@media screen and (max-width: $break-phone) {
+		height: 500px;
 	}
 
 
@@ -150,6 +158,9 @@ aside {
 
 	.hero-inner-content {
 		margin: 70px 0 0 0;
+		@media screen and (max-width: $break-tablet) {
+			max-width: 80%;
+		}
 	}
 
 	h1 {
@@ -167,6 +178,7 @@ aside {
 		position: absolute;
 		left: 75%;
    		top: 40px;
+   		z-index: 10;
 
    		@media screen and (max-width: $break-tablet) {
 	   		left: 40px;
@@ -224,6 +236,7 @@ aside {
 }
 
 .hero-inner-subnav {
+
 	&:before {
 		left: 24%;
     	top: -20px;
@@ -244,6 +257,7 @@ aside {
 .subnav {
 	margin: 0 0 30px;
 	padding: 0;
+	z-index: 10;
 
 	ul {
 		list-style: none;
@@ -259,7 +273,7 @@ aside {
 				display: block;
 				color: $navy;
 				font-size: 18px;
-				font-weight: $font-weight--semi-bold;
+				font-weight: $font-weight--normal;
 				border-bottom: 3px solid transparent;
 
 				&:hover {
@@ -285,13 +299,13 @@ aside {
 		background: url(../images/content/heros/community-news-large.png) no-repeat center center;
 		background-size: cover;
 		
-		@media screen and (max-width: $break-tablet) {
-			background: url(../images/content/heros/community-news-medium.png) no-repeat center center;
+		@media screen and (max-width: $small-breakpoint) {
+			background: url(../images/content/heros/community-news-medium.png) no-repeat center 0;
 			background-size: cover;
 		}
 
-		@media screen and (max-width: $break-phone) {
-			background: url(../images/content/heros/community-news-small.png) no-repeat center center;
+		@media screen and (max-width: $break-xs) {
+			background: url(../images/content/heros/community-news-small.png) no-repeat center 0;
 			background-size: cover;
 		}
 	}
@@ -303,12 +317,12 @@ aside {
 		background: url(../images/content/heros/showcase-large.png) no-repeat center center;
 		background-size: cover;
 		
-		@media screen and (max-width: $break-tablet) {
+		@media screen and (max-width: $small-breakpoint) {
 			background: url(../images/content/heros/showcase-medium.png) no-repeat center center;
 			background-size: cover;
 		}
 
-		@media screen and (max-width: $break-phone) {
+		@media screen and (max-width: $break-xs) {
 			background: url(../images/content/heros/showcase-small.png) no-repeat center center;
 			background-size: cover;
 		}
@@ -325,7 +339,7 @@ aside {
 			background-size: cover;
 		}
 
-		@media screen and (max-width: $break-phone) {
+		@media screen and (max-width: $break-xs) {
 			background: url(../images/content/heros/softwaredev-small.png) no-repeat center center;
 			background-size: cover;
 		}
@@ -343,7 +357,7 @@ aside {
 			background-size: cover;
 		}
 
-		@media screen and (max-width: $break-phone) {
+		@media screen and (max-width: $break-xs) {
 			background: url(../images/content/heros/hardwaredev-small.png) no-repeat center center;
 			background-size: cover;
 		}

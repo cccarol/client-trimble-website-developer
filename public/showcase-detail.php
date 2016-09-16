@@ -37,7 +37,7 @@
                
 
                 <div class="hero-inner hero-inner-image">
-                    <div class="link-back">Back to Gallery</div>
+                    <a class="link-back" href="">Back to Gallery</a>
                     <div class="row">
                         <div class="small-12 medium-push-1 medium-8 large-push-1 large-6 columns">
                             

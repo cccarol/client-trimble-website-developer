@@ -55,40 +55,44 @@
                         <a href="" class="slider-details-left-close slider-button-1 slider-close">close</a>
                         <div class="content">
                             <div class="row">
-                                <div class="small-12 medium-8 columns">
+                                <div class="small-12 medium-push-1 medium-10 columns">
                                     <img src="images/products/product-1.png" class="detail-img"/>
                                     <h2>How do I get started developing a module?</h2>
                                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="small-12 medium-4 columns">
-                                    <div class="steps">
-                                        <div class="icon icon-profile-lock"></div>
-                                        <div class="step-content">
-                                            <h5>Step 1</h5>
-                                            <h4>Join the developer network.</h4>
-                                            <a href="" class="button button-arrow button-arrow-blue">Register Today</a>
+                                <div class="small-12 medium-push-1 medium-11 columns">
+                                    <div class="row">
+                                        <div class="small-12 medium-4 columns">
+                                            <div class="steps">
+                                                <div class="icon icon-profile-lock"></div>
+                                                <div class="step-content">
+                                                    <h5>Step 1</h5>
+                                                    <h4>Join the developer network.</h4>
+                                                    <a href="" class="button button-arrow button-arrow-blue">Register Today</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="small-12 medium-4 columns">
-                                    <div class="steps">
-                                        <div class="icon icon-download"></div>
-                                        <div class="step-content">
-                                            <h5>Step 2</h5>
-                                            <h4>Get the development kit.</h4>
-                                            <a href="" class="button button-arrow button-arrow-blue">Available Kits</a>
+                                        <div class="small-12 medium-4 columns">
+                                            <div class="steps">
+                                                <div class="icon icon-download"></div>
+                                                <div class="step-content">
+                                                    <h5>Step 2</h5>
+                                                    <h4>Get the development kit.</h4>
+                                                    <a href="" class="button button-arrow button-arrow-blue">Available Kits</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="small-12 medium-4 columns">
-                                    <div class="steps">
-                                        <div class="icon icon-tools"></div>
-                                        <div class="step-content">
-                                            <h5>Step 3</h5>
-                                            <h4>Start Building!</h4>
-                                            <a href="" class="button button-arrow button-arrow-blue">Developer Resources</a>
+                                        <div class="small-12 medium-4 columns">
+                                            <div class="steps">
+                                                <div class="icon icon-tools"></div>
+                                                <div class="step-content">
+                                                    <h5>Step 3</h5>
+                                                    <h4>Start<br />Building!</h4>
+                                                    <a href="" class="button button-arrow button-arrow-blue">Developer Resources</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -121,40 +125,44 @@
 
                         <div class="content">
                             <div class="row">
-                                <div class="small-12 medium-10 columns">
+                                <div class="small-12 medium-push-1 medium-10 columns">
                                     <img src="images/products/product-3.png" class="detail-img"/>
                                     <h2>How do I get started developing a module?</h2>
                                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="small-12 medium-4 columns">
-                                    <div class="steps">
-                                        <div class="icon icon-profile-lock"></div>
-                                        <div class="step-content">
-                                            <h5>Step 1</h5>
-                                            <h4>Join the developer network.</h4>
-                                            <a href="" class="button button-arrow button-arrow-blue">Register Today</a>
+                                <div class="small-12 medium-push-1 medium-11 columns">
+                                    <div class="row">
+                                        <div class="small-12 medium-4 columns">
+                                            <div class="steps">
+                                                <div class="icon icon-profile-lock"></div>
+                                                <div class="step-content">
+                                                    <h5>Step 1</h5>
+                                                    <h4>Join the developer network.</h4>
+                                                    <a href="" class="button button-arrow button-arrow-blue">Register Today</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="small-12 medium-4 columns">
-                                    <div class="steps">
-                                        <div class="icon icon-download"></div>
-                                        <div class="step-content">
-                                            <h5>Step 2</h5>
-                                            <h4>Get the development kit.</h4>
-                                            <a href="" class="button button-arrow button-arrow-blue">Available Kits</a>
+                                        <div class="small-12 medium-4 columns">
+                                            <div class="steps">
+                                                <div class="icon icon-download"></div>
+                                                <div class="step-content">
+                                                    <h5>Step 2</h5>
+                                                    <h4>Get the development kit.</h4>
+                                                    <a href="" class="button button-arrow button-arrow-blue">Available Kits</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="small-12 medium-4 columns">
-                                    <div class="steps">
-                                        <div class="icon icon-tools"></div>
-                                        <div class="step-content">
-                                            <h5>Step 3</h5>
-                                            <h4>Start Building!</h4>
-                                            <a href="" class="button button-arrow button-arrow-blue">Developer Resources</a>
+                                        <div class="small-12 medium-4 columns">
+                                            <div class="steps">
+                                                <div class="icon icon-tools"></div>
+                                                <div class="step-content">
+                                                    <h5>Step 3</h5>
+                                                    <h4>Start<br />Building!</h4>
+                                                    <a href="" class="button button-arrow button-arrow-blue">Developer Resources</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -168,48 +176,55 @@
 
                 </section>
 
+
+                <?php include 'partials/startdeveloping.php'; ?>
+
                 <section class="faqs bg-dark">
                     <div class="content">
-
-                        <div class="row margin-bottom-large">
-                            <div class="small-12 columns">
-                                <h2 class="h2-secondary ">Frequently Asked Questions</h2>
-                                <p><em>The most asked questions from our support crew.</em></p>
-                            </div>
-                        </div>
                         <div class="row">
+                            <div class="small-12 medium-push-1 medium-10 columns">
 
-                            <div class="small-12 medium-6 columns">
-                                <h1>Proin urna enim at egestas sed, in justo ante quis justo consequat vel in leo?</h1>
-                                <p class="larger">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui fugiat quo voluptas nulla pariatur.</p>
-                            </div>
-                            <div class="small-12 medium-6 columns">
+                                <div class="row margin-bottom-large">
+                                    <div class="small-12 columns">
+                                        <h2 class="h2-secondary ">Frequently Asked Questions</h2>
+                                        <p><em>The most asked questions from our support crew.</em></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="small-12 medium-6 columns">
+                                        <h1>Proin urna enim at egestas sed, in justo ante quis justo consequat vel in leo?</h1>
+                                        <p class="larger">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui fugiat quo voluptas nulla pariatur.</p>
+                                    </div>
+                                    <div class="small-12 medium-6 columns">
 
 
-                                <ul class="accordion" data-accordion="">
-                                    <li class="accordion-navigation">
-                                      <a href="#faq-1" aria-expanded="false" class="accordion-link">Proin urna enim, semper at egestas sed, elementum in justo?</a>
-                                      <div id="faq-1" class="content">
-                                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure qui in ea voluptate velit esse quam nihil , vel illum qui  eum quo nulla pariatur</p>
-                                      </div>
-                                    </li>
+                                        <ul class="accordion" data-accordion="">
+                                            <li class="accordion-navigation">
+                                              <a href="#faq-1" aria-expanded="false" class="accordion-link">Proin urna enim, semper at egestas sed, elementum in justo?</a>
+                                              <div id="faq-1" class="content">
+                                                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure qui in ea voluptate velit esse quam nihil , vel illum qui  eum quo nulla pariatur</p>
+                                              </div>
+                                            </li>
 
-                                    <li class="accordion-navigation">
-                                      <a href="#faq-2" aria-expanded="false" class="accordion-link">Proin urna enim, semper at egestas sed, elementum in justo?</a>
-                                      <div id="faq-2" class="content">
-                                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure qui in ea voluptate velit esse quam nihil , vel illum qui  eum quo nulla pariatur</p>
-                                      </div>
-                                    </li>
+                                            <li class="accordion-navigation">
+                                              <a href="#faq-2" aria-expanded="false" class="accordion-link">Proin urna enim, semper at egestas sed, elementum in justo?</a>
+                                              <div id="faq-2" class="content">
+                                                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure qui in ea voluptate velit esse quam nihil , vel illum qui  eum quo nulla pariatur</p>
+                                              </div>
+                                            </li>
 
-                                    <li class="accordion-navigation">
-                                      <a href="#faq-3" aria-expanded="false" class="accordion-link">Proin urna enim, semper at egestas sed, elementum in justo?</a>
-                                      <div id="faq-3" class="content">
-                                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure qui in ea voluptate velit esse quam nihil , vel illum qui  eum quo nulla pariatur</p>
-                                      </div>
-                                    </li>
+                                            <li class="accordion-navigation">
+                                              <a href="#faq-3" aria-expanded="false" class="accordion-link">Proin urna enim, semper at egestas sed, elementum in justo?</a>
+                                              <div id="faq-3" class="content">
+                                                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure qui in ea voluptate velit esse quam nihil , vel illum qui  eum quo nulla pariatur</p>
+                                              </div>
+                                            </li>
 
-                                </ul>
-                               
+                                        </ul>
+                                       
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -217,45 +232,49 @@
 
                  <section class="bg-pattern">
                     <div class="content">
-
-                        <div class="row margin-bottom-large">
-                            <div class="small-12 columns">
-                                <h2 class="h2-secondary ">What’s Fresh</h2>
-                                <p><em>The latest <u>news</u> and <u>events</u> in the Trimble EMPOWER Developer world.</em></p>
-                            </div>
-                        </div>
-
                         <div class="row">
-                            <div class="small-12 columns">
-                                <div class="news-item">
-                                    <a href="">
-                                        <div class="icon icon-file">File</div>
-                                        <div class="news-content">
-                                            <h3 class="h3-secondary">Software Development Kit API updated to 2.31</h3>
-                                            <p>Sub-copy area for short file description etc…</p>
-                                        </div>
-                                    </a>
+                            <div class="small-12 medium-push-1 medium-10 columns">
+
+                                <div class="row margin-bottom-medium">
+                                    <div class="small-12 columns">
+                                        <h2 class="h2-secondary ">What’s Fresh</h2>
+                                        <p><em>The latest <u>news</u> and <u>events</u> in the Trimble EMPOWER Developer world.</em></p>
+                                    </div>
                                 </div>
 
-                                <div class="news-item">
-                                    <a href="">
-                                        <div class="icon icon-calendar">File</div>
-                                        <div class="news-content">
-                                            <h3 class="h3-secondary">Software Development Kit API updated to 2.31</h3>
-                                            <p>Sub-copy area for short file description etc…</p>
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <div class="news-item">
+                                            <a href="">
+                                                <div class="icon icon-file">File</div>
+                                                <div class="news-content">
+                                                    <h3 class="h3-secondary">Software Development Kit API updated to 2.31</h3>
+                                                    <p>Sub-copy area for short file description etc…</p>
+                                                </div>
+                                            </a>
                                         </div>
-                                    </a>
-                                </div>
+
+                                        <div class="news-item">
+                                            <a href="">
+                                                <div class="icon icon-calendar">File</div>
+                                                <div class="news-content">
+                                                    <h3 class="h3-secondary">Software Development Kit API updated to 2.31</h3>
+                                                    <p>Sub-copy area for short file description etc…</p>
+                                                </div>
+                                            </a>
+                                        </div>
 
 
-                                <div class="news-item">
-                                    <a href="">
-                                        <div class="icon icon-file">File</div>
-                                        <div class="news-content">
-                                            <h3 class="h3-secondary">Software Development Kit API updated to 2.31</h3>
-                                            <p>Sub-copy area for short file description etc…</p>
+                                        <div class="news-item">
+                                            <a href="">
+                                                <div class="icon icon-file">File</div>
+                                                <div class="news-content">
+                                                    <h3 class="h3-secondary">Software Development Kit API updated to 2.31</h3>
+                                                    <p>Sub-copy area for short file description etc…</p>
+                                                </div>
+                                            </a>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -263,19 +282,7 @@
                     </div>
                 </section>
 
-                <section class="cta-contact">
-                    <div class="content">
-
-                        <div class="row">
-                            <div class="small-12 medium-7 columns">
-                                <h2>Have a unique solution or idea and want to get in touch with us?</h2>
-                            </div>
-                            <div class="small-12 medium-5 columns">
-                                <a href="" class="button button-arrow">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <?php include 'partials/contactus.php'; ?>
 
 
             </div>

@@ -53,7 +53,7 @@
 
 
                         <div class="row">
-                            <div class="small-12 medium-push-2 medium-8 large-push-3 large-6 columns">
+                            <div class="small-12 medium-push-1 medium-9 columns">
                                 <nav class="subnav">
                                     <ul>
                                         <li class="active">

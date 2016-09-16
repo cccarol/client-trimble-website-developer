@@ -1,10 +1,14 @@
 // To add more : Refer to Public ../public/vendor/foundation/scss/
 
-@import "../public/_assets/vendor/foundation/scss/foundation/components/grid";
-@import "../public/_assets/vendor/foundation/scss/foundation/components/block-grid";
-@import "../public/_assets/vendor/foundation/scss/foundation/components/clearing";
-@import "../public/_assets/vendor/foundation/scss/foundation/components/top-bar";
-// @import "../public/_assets/vendor/foundation/scss/foundation/components/type";
-@import "../public/_assets/vendor/foundation/scss/foundation/components/visibility";
-@import "../public/_assets/vendor/foundation/scss/foundation/components/buttons";
-@import "../public/_assets/vendor/foundation/scss/foundation/components/accordion";
+//@import "../public/_assets/vendor/foundation/scss/foundation/components/grid";
+// @import "../public/_assets/vendor/foundation/scss/foundation/components/block-grid";
+// @import "../public/_assets/vendor/foundation/scss/foundation/components/clearing";
+// @import "../public/_assets/vendor/foundation/scss/foundation/components/top-bar";
+// @import "../public/_assets/vendor/foundation/scss/foundation/components/visibility";
+// @import "../public/_assets/vendor/foundation/scss/foundation/components/buttons";
+// @import "../public/_assets/vendor/foundation/scss/foundation/components/accordion";
+
+
+@import "foundation/block-grid";
+@import "foundation/grid";
+@import "foundation/accordion";

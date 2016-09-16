@@ -17,7 +17,7 @@ html {
     }
 }
 
-* {
+html > * {
     transition: all .5s;
 }
 
@@ -69,6 +69,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+
+    font-size: 34px;
     span {
         font-weight: $font-weight--normal;
     }
@@ -102,7 +104,7 @@ h3 {
 }
 
 .larger {
-    font-size: 110%;
+    font-size: 115%;
 }
 
 blockquote {
@@ -126,6 +128,10 @@ blockquote {
     margin-bottom: 100px;
 }
 
+.margin-bottom-medium {
+    margin-bottom: 50px;
+}
+
 // Form . 
 
 
@@ -143,6 +149,10 @@ fieldset {
     }
 }
 
+label {
+    font-size: $base__font-size;
+}
+
 .input-wrapper {
     border-radius: 3px;
     border: 1px solid $grey-md;
@@ -158,14 +168,15 @@ fieldset {
         float: left;  
         margin: 0;
         display: inline-block;
-        height: 40px;
+        height: 50px;
+        line-height: 1.9;
     }    
 
     label {
         width: 85px;
         background: $grey-lt;
         border-right: 1px solid $grey-md;
-        text-align: center;        
+        text-align: center; 
     }
 
     select, input:not([type]), input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
@@ -382,8 +393,7 @@ input:checked ~ label {
     text-align: center;
 
     &.button-large {
-        padding-left: 90px;
-        padding-right: 90px;
+        padding: 17px 90px;
     }
 
     &.button-yellow {
@@ -460,11 +470,16 @@ input:checked ~ label {
     max-width: 1550px;
     width: calc(100% - 40px);
     margin: 0 auto;
-    height: 100%;
+   
 
-    @media screen and (max-width: $break-tablet) {
+    @media screen and (max-width: $break-laptop) {
         width: 100%;
     }
+
+    @media screen and (min-width: $large-breakpoint) {
+         height: 100%;
+    }
+
 }
 
 .row {
@@ -489,6 +504,7 @@ input:checked ~ label {
         z-index: 10;
         position: absolute;
         right: 0;
+        top: 0;
 
         @media screen and (max-width: $break-tablet) {
             display: none;
@@ -497,7 +513,7 @@ input:checked ~ label {
 }
 
 .content {
-    padding: 100px 0;
+    padding: 100px 5%;
 }
 
 section {
