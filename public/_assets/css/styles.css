@@ -1864,8 +1864,10 @@ section:after {
   height: 0; }
 
 .bg-pattern {
-  background: url(../images/bg/bg.png) 0 0 repeat;
-  overflow: hidden; }
+  background: url(../images/bg/bg.png) 0 0 repeat; }
+  @media screen and (max-width: 1180px) {
+    .bg-pattern {
+      overflow: hidden; } }
 
 .social-sharing {
   margin: 100px auto; }
@@ -1903,12 +1905,13 @@ header {
     display: block;
     width: 100%;
     position: absolute;
-    top: 107px;
+    top: 105px;
     background: #ffffff;
     z-index: 4;
     width: calc(100% + 0px);
     margin: 0 -20px;
-    border-bottom: #cccccc 1px solid; }
+    border-bottom: #cccccc 1px solid;
+    border-top: #cccccc 1px solid; }
   header .logo {
     width: 205px;
     float: left;
@@ -2826,6 +2829,21 @@ footer {
     background: url(../images/icons/trophy.png) no-repeat 0 0;
     background-size: 100% 100%; }
 
+.hero-inner-arrows header:before {
+  content: '';
+  background: url(../images/icons/arrows-yellow-three.png);
+  background-size: 100% 100%;
+  width: 18px;
+  height: 96px;
+  position: absolute;
+  z-index: 10;
+  top: 184px;
+  left: 50px; }
+  @media screen and (max-width: 64em) {
+    .hero-inner-arrows header:before {
+      top: 73px;
+      left: 66%; } }
+
 aside h1, aside p,
 .hero-inner h1,
 .hero-inner p {
@@ -2848,16 +2866,6 @@ aside h1,
   .hero-inner h1 span {
     font-weight: 400; }
 
-aside:before,
-.hero-inner:before {
-  content: '';
-  background: url(../images/icons/arrows-yellow-three.png);
-  background-size: 100% 100%;
-  width: 18px;
-  height: 96px;
-  position: absolute;
-  z-index: 10; }
-
 aside .icon,
 .hero-inner .icon {
   position: absolute;
@@ -2872,6 +2880,16 @@ aside {
   position: relative;
   float: left;
   margin: 0 0 0 -30px; }
+  aside:before {
+    content: '';
+    background: url(../images/icons/arrows-yellow-three.png);
+    background-size: 100% 100%;
+    width: 18px;
+    height: 96px;
+    position: absolute;
+    z-index: 10;
+    right: 40px;
+    bottom: -40px; }
   @media screen and (max-width: 1180px) {
     aside {
       margin: 0;
@@ -2882,9 +2900,6 @@ aside {
     aside {
       width: calc(100% - 70px);
       max-width: 430px; } }
-  aside:before {
-    right: 20px;
-    bottom: -40px; }
   aside .icon {
     top: -20px;
     left: 33%; }

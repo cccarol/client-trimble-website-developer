@@ -33,16 +33,16 @@ $(function() {
 
 
 
-	$(".slider-button-1").click(function(test) {
-        test.preventDefault();
+	$(".slider-button-1").click(function(sliderButton1) {
+        sliderButton1.preventDefault();
         $(".slider-details-left").toggleClass("open");
         $(".slider-list-right").toggleClass("close2");
         $(".slider-list-left").toggleClass("close");
     });
 
 
-    $(".slider-button-2").click(function(test2) {
-        test2.preventDefault();
+    $(".slider-button-2").click(function(sliderButton2) {
+        sliderButton2.preventDefault();
         $(".slider-details-right").toggleClass("open");
         $(".slider-list-left").toggleClass("close2");
         $(".slider-list-right").toggleClass("close");
@@ -55,31 +55,31 @@ $(function() {
     //HardWare Dev Slider -> CSS transitions and media q's
 
     //// Left Side
-    $(".hd-left .show-detail").click(function(test3) {
-        test3.preventDefault();
+    $(".hd-left .show-detail").click(function(hdLeftShowDetail) {
+        hdLeftShowDetail.preventDefault();
         $(".hd-left .detail").toggleClass("open");
         $(".hd-left .content").toggleClass("close");
         $(".hd-col").toggleClass("shift-right shift");
     });
 
-    $(".hd-left .show-list").click(function(test4) {
-        test4.preventDefault();
+    $(".hd-left .show-list").click(function(hdLeftShowList) {
+        hdLeftShowList.preventDefault();
         $(".hd-left .detail").toggleClass("open");
         $(".hd-left .content").toggleClass("close");
         // $(".title-shift").toggleClass("shift-right");
     });
 
     //// Right Side
-    $(".hd-right .show-detail").click(function(test5) {
-        test5.preventDefault();
+    $(".hd-right .show-detail").click(function(hdRightShowDetail) {
+        hdRightShowDetail.preventDefault();
         $(".hd-right .detail").toggleClass("open");
         $(".hd-right .content").toggleClass("close");
         $(".hd-col").toggleClass("shift-left shift");
         // $(".title-shift").toggleClass("shift-left");
     });
 
-    $(".hd-right .show-list").click(function(test6) {
-        test6.preventDefault();
+    $(".hd-right .show-list").click(function(hdRightShowList) {
+        hdRightShowList.preventDefault();
         $(".hd-right .detail").toggleClass("open");
         $(".hd-right .content").toggleClass("close");
         // $(".title-shift").toggleClass("shift-left");
@@ -208,8 +208,10 @@ $(document).ready(function() {
         }
         // Width is greater than 1024
         else if (windowSize >= 1024) {
-
-
+            // $('nav ul li').show();
+            // $('.nav-subnav').hide();
+            // $(back).hide();
+            //$('.show-children').toggleClass();
 
 
 

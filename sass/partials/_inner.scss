@@ -1,3 +1,24 @@
+.hero-inner-arrows {
+	header {
+		&:before {
+			content: '';
+			background: url(../images/icons/arrows-yellow-three.png);
+			background-size: 100% 100%;
+			width: 18px;
+			height: 96px;
+			position: absolute;
+			z-index: 10;
+			top: 184px;
+    		left: 50px;
+    		@media screen and (max-width: $break-tablet) {
+    			top: 73px;
+    			left: 66%;
+    		}
+		}
+	}
+}
+
+
 aside, 
 .hero-inner {
 	h1, p {
@@ -23,18 +44,6 @@ aside,
 		}
 	}
 
-	&:before {
-		content: '';
-		background: url(../images/icons/arrows-yellow-three.png);
-		background-size: 100% 100%;
-		width: 18px;
-		height: 96px;
-		position: absolute;
-		z-index: 10;
-		
-
-	}
-
 	.icon {
 		position: absolute;
 		width: 70px;
@@ -52,6 +61,18 @@ aside {
 	float: left;
 	margin: 0 0 0 -30px;
 
+	&:before {
+		content: '';
+		background: url(../images/icons/arrows-yellow-three.png);
+		background-size: 100% 100%;
+		width: 18px;
+		height: 96px;
+		position: absolute;
+		z-index: 10;
+		right: 40px;
+		bottom: -40px;
+	}
+
 	@media screen and (max-width: $break-laptop) {
 		margin: 0;
 		width: calc(100% - 250px);
@@ -62,12 +83,6 @@ aside {
 	@media screen and (max-width: $break-phone) {
 		width: calc(100% - 70px);
 		max-width: 430px;
-	}
-
-	&:before {
-		right: 20px;
-		bottom: -40px;
-
 	}
 
 	.icon {

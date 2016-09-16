@@ -25,7 +25,7 @@
         -->
 
     </head>
-    <body class="inner software-dev">
+    <body class="inner software-dev hero-inner-arrows">
         <!--[if lt IE 9]>
             <div class="ieblock">
             Your Browser is out of date! Please upgrade to the newest version of <a href="http://www.google.com/chrome/">Chrome</a>, <a href="https://www.apple.com/safari/">Safari</a> or <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a>.

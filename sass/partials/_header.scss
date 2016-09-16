@@ -19,12 +19,13 @@ header {
 			display: block;
 			width: 100%;
 			position: absolute;
-			top: 107px;
+			top: 105px;
 			background: $white;
 			z-index: 4;
 			width: calc(100% + 0px);
 			margin: 0 -20px;
 			border-bottom: $grey-md 1px solid;
+			border-top: $grey-md 1px solid;
 		}
 	}
 

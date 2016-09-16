@@ -530,7 +530,9 @@ section {
 
 .bg-pattern {
     background: url(../images/bg/bg.png) 0 0 repeat;
-    overflow: hidden;
+    @media screen and (max-width: $break-laptop) {
+        overflow: hidden;
+    }
 }
 
 // Social. Appears on Showcase . 
